@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "agenda.h"
+#include "lista.h"
 #include <stdlib.h>
 #include <conio.h>
 
