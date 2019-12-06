@@ -1,5 +1,5 @@
-Agenda.o: funciones.c
-	gcc funciones.c -c
+Agenda.o: lista.c
+	gcc lista.c -c
 main.o: main.c
 	gcc main.c -c
 
