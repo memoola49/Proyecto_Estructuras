@@ -1,13 +1,9 @@
-lista.o: lista.c
-	gcc lista.c -c
-main.o: main.c
-	gcc main.c -c
 
-a.out: main.o lista.o
-	gcc main.o lista.o
+a.exe: main.o Lista.o
+	gcc main.o Lista.o
 
-run: a.out
-	./a.out
+run: a.exe
+	./a.exe
 
 clean:
-	rm -f a.out main.o lista.o
+	rm -f a.exe
