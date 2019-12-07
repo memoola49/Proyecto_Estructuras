@@ -1,4 +1,5 @@
 #include "Lista.h"
+int menu();
 struct persona* agregarcontacto();
 int numeropersonas (struct nodo *lista);
 int main()
