@@ -1,7 +1,8 @@
 #include "Lista.h"
-#include <stdlib.h>
 #include <stdio.h>
+#include <stdlib.h>
 #include <string.h>
+#include <ctype.h>
 struct nodo* crearlista(struct nodo *lista)
 {
 	lista=NULL;
@@ -10,7 +11,7 @@ struct nodo* crearlista(struct nodo *lista)
 
 struct nodo* agregar(struct nodo *lista,struct persona *p)
 {
-	
+
 	struct nodo *nuevo;
 	nuevo=(struct nodo *)malloc(sizeof(struct nodo));
 	struct nodo *aux;
@@ -23,11 +24,11 @@ struct nodo* agregar(struct nodo *lista,struct persona *p)
 	}
 	else{
 	aux=lista;
-	
+
 		nuevo->sig=aux;
 	return nuevo;
 	}
-	
+
 }
 void mostrarlista(struct nodo *lista)
 {
@@ -55,7 +56,7 @@ struct nodo *eliminar(struct nodo *lista,char *n)
 {
 
 	struct nodo *aux1,*aux2;
-	
+
 	if(lista==NULL)
 	{
 		printf("lista vacia \n");
@@ -84,7 +85,7 @@ struct nodo *eliminar(struct nodo *lista,char *n)
 		free(aux1);
 		return lista;
 	}
-		
+
 	}
 }
 
@@ -94,7 +95,7 @@ void ordenalf(struct nodo *lista)
 	 struct nodo *inicio,*siguiente,*temp;
 
 	 if(lista!=NULL)
-	 { 
+	 {
 	 inicio=lista;
 		 while(inicio!=NULL)
 		 {
@@ -113,19 +114,19 @@ void ordenalf(struct nodo *lista)
 	 }
 	 }
 	 mostrarlista(lista);
-	 
+
 }
 
 void mostrarcontacto(struct nodo *lista,char *no)
 {
-	
+
 		struct nodo *aux1,*aux2;
-	
+
 	if(lista==NULL)
 	{
 		printf("lista vacia \n");
 	}
-	
+
 	else {
 		aux1=lista;
 
@@ -144,14 +145,14 @@ if(aux1==NULL)
 	printf("el contacto no se encuentra en la lista \n");
 
 	}
-		
+
 	}
 }
 
 void ordenfav(struct nodo *lista)
 {
 	struct nodo *aux1,*aux2;
-	
+
 	if(lista==NULL)
 	{
 		printf("lista vacia \n");
@@ -174,7 +175,7 @@ if(aux1==NULL)
 	printf("NO TIENE CONTACTOS FAVORITOS \n");
 
 	}
-		
+
 	}
 }
 

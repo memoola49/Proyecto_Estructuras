@@ -1,8 +1,4 @@
-#include <stdio.h>
 #include "Lista.h"
-#include <stdlib.h>
-#include <conio.h>
-
 struct persona* agregarcontacto();
 int numeropersonas (struct nodo *lista);
 int main()
