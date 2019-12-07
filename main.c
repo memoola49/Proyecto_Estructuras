@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "lista.h"
+#include "Lista.h"
 #include <stdlib.h>
 #include <conio.h>
 
